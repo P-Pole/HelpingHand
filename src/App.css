@@ -1,0 +1,161 @@
+body {
+  margin: 0;
+}
+
+#root {
+  display: flex;
+  background-color: #bdc917;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.header {
+  background-color: #d217d8;
+  color: #ec0101;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 10%;
+  flex: 0 0 auto;
+  /* padding: 0 1rem; */
+}
+
+.header img {
+  height: 80%;
+}
+
+.header a {
+  color: #bdc917;
+  text-decoration: none;
+  margin-right: 1rem;
+}
+
+.logo{
+  align-items: center;
+  width: 10%;
+  justify-content: center;
+  margin-left: 5rem;
+
+
+}
+.logo img{
+
+  align-self: auto;
+}
+.menu {
+  display: flex;
+  background-color: #5d6fb8;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+  padding: 1%;
+  
+}
+
+.menu a {
+   /* dark blue */
+  text-decoration: none;
+  font-size: 1.2rem;
+  margin-right: 1rem;
+  
+}
+
+.loginRegister {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  width: 15%;
+}
+
+.loginRegister button {
+  background-color: #d46e99; /* dark blue */
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  margin-left: 1rem;
+  cursor: pointer;
+}
+
+.searchBar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3rem;
+  background-color: #62d603;
+  border-radius:1.5rem;
+  width: 50%;
+  flex: 0 0 auto; /* take up all available space, but don't grow or shrink */
+  margin: 1rem 0;
+}
+
+.searchBar input[type="text"] {
+  width: 100%;
+  max-width: 400px;
+  height: 2rem;
+  border: none;
+  flex: 1;
+  font-size: 1rem;
+}
+
+.feed {
+  flex: 1; /* take up remaining space */
+  width: 80%;
+  background-color: #12cebe; /* white */
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  .headerMenu {
+    flex-direction: column;
+  }
+
+  .headerMenu a {
+    margin-right: 0;
+    margin-bottom: 0.5rem;
+  }
+
+  .mainMenu {
+    padding: 1rem;
+  }
+
+  .menu {
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+
+  .menu a {
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+  }
+
+  .loginRegister {
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+
+  .searchBar {
+    margin-top: 1rem;
+  }
+}
+
+.feed img {
+  display: flex;
+  max-width: 100%;
+  max-height: 100%;
+  justify-content: center;
+}
